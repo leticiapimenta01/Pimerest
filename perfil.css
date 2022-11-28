@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+:root {
+    --color-base: #ff0000;
+    --color-escrita: #000000;
+    --color-green: #047200;
+    --color-escrita-menor: #424242;
+}
+  
+body {
+    font-family: "Amatic SC", cursive;
+}
+
+/* header */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+nav{
+    margin-top: 3.5em;
+    display: flex;
+    gap: 20px;
+}
+
+nav h3{
+    margin-bottom: 1em;
+}
+
+#perfil-tsuki{
+    width: 10em;
+    height: 10em;
+    border-radius: 100px;
+}
+
+h2{
+    font-size: 40pt;
+}
+
+h3{
+    font-size: 20pt;
+}
+
+#email-tsuki{
+    color: var(--color-escrita-menor);
+}
+
+/* Main */
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pins img{
+    width: 15em;
+    height: 20em;
+    border-radius: 25px;
+    border: white solid 3px;
+}
+
+#img1{
+    position: absolute;
+    margin-left: 2em;
+    z-index: -1;
+}
+#img2{
+    position: absolute;
+    margin-left: 4em;
+    z-index: 0;
+}
+#img3{
+    position: absolute;
+    margin-left: 8em;
+    z-index: 1;    
+}
+
+.div-pins{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.div-pins h3{
+    margin: 12.2em 0 0 3.5em;
+}
+
+.div-pins p{
+    margin-left: 5em;
+    font-size: 15pt;
+    color: var(--color-escrita-menor);
+}
+
+#div-pins4{
+    margin-bottom: 5em;
+}
+
+/* Footer */
+.icon {
+    width: 3em;
+    height: 3em;
+    margin: 0px 2vw;
+  
+    opacity: 0.7;
+}
+
+footer{
+    z-index: 1;
+    bottom: 0.5em;
+    position: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    background-color: var(--color-base);
+    margin: 0% 10%;
+    border-radius: 10px;
+    padding: 10px;
+  
+    height: 5%;
+    width: 80%;
+}
+  
+#icon-tsuki{
+    border-radius: 30px;
+    opacity: 1;
+    border: solid var(--color-escrita) 2px;
+}
+
+@media (max-width: 470px) {
+    section {
+      column-count: 2;
+    }
+  
+    .icon {
+      width: 2em;
+      height: 2em;
+    }
+
+    main{
+        flex-direction: column;
+    }
+    
+    .pins img{
+        width: 8em;
+        height: 13em;
+    }
+
+    .div-pins h3{
+        margin: 8em 0 0 3.5em;
+    }
+}

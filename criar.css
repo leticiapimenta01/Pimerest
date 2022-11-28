@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+:root {
+    --color-base: #ff0000;
+    --color-escrita: black;
+    --color-green: #047200;
+}
+  
+body {
+    font-family: "Amatic SC", cursive;
+}
+.foto{
+    display: flex;
+    align-items: center;
+}
+
+canvas{
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+video{
+    margin: 20px;
+    width: 50%;
+    height: 50%;
+    border: var(--color-green) solid 5px;
+    border-radius: 5px;
+}
+
+button{
+    border-radius: 50px;
+    border: solid black 0px;
+    margin: 30px;
+}
+
+.video-link{
+    text-decoration: none;
+    color: #ff0000;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border: solid var(--color-base) 2px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 4em;
+}
+
+/*Detalhes*/
+#selecionado {
+    opacity: 1;
+  }
+
+.icon {
+    width: 3em;
+    height: 3em;
+    margin: 0px 2vw;
+  
+    opacity: 0.7;
+}
+
+/* footer */
+footer {
+    z-index: 1;
+    bottom: 0.5em;
+    position: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    background-color: var(--color-green);
+    margin: 0% 10%;
+    border-radius: 10px;
+    padding: 10px;
+  
+    height: 5%;
+    width: 80%;
+  }
+    
+  #icon-tsuki {
+      border-radius: 30px;
+  }
+
+  @media (max-width: 470px){
+    .icon {
+        width: 2em;
+        height: 2em;
+    }
+
+    video{
+        width: 90%;
+        height: 90%;
+    }
+
+    canvas{
+        width: 90%;
+        height: 90%;
+    }
+    
+    .foto{
+        flex-direction: column;
+    }
+
+    button{
+        margin-bottom: 20px;
+    }
+  }
